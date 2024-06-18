@@ -24,4 +24,7 @@ public class Supplier
     
     [Phone]
     public string Fax { get; set; }
+    
+    [ConcurrencyCheck]
+    public byte[] RowVersion { get; set; }
 }

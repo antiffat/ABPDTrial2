@@ -20,6 +20,9 @@ public class Product
     
     public bool IsDiscounted { get; set; }
     
+    [ConcurrencyCheck]
+    public byte[] RowVersion { get; set; }
+    
     public Supplier Supplier { get; set; }
     
     public ICollection<OrderItem> OrderItems { get; set; }

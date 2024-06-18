@@ -17,6 +17,9 @@ public class OrderItem
     [Range(1, int.MaxValue)]
     public int Quantity { get; set; }
     
+    [ConcurrencyCheck]
+    public byte[] RowVersion { get; set; }
+    
     public Order Order { get; set; }
     
     public Product Product { get; set; }

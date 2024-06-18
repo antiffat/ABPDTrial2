@@ -16,8 +16,7 @@ public class Order
     public decimal TotalAmount { get; set; }
     
     [ConcurrencyCheck]
-    public byte[] RowVersion { get; set; } // I added concurrency check only in Order class as we will do operations on
-                                           // Order mainly. Should I add that to all Models also?
+    public byte[] RowVersion { get; set; }
     
     public Customer Customer { get; set; }
     

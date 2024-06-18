@@ -22,5 +22,8 @@ public class Customer
     [Required, Phone]
     public string Phone { get; set; }
     
+    [ConcurrencyCheck]
+    public byte[] RowVersion { get; set; }
+    
     public ICollection<Order> Orders { get; set; }
 }
