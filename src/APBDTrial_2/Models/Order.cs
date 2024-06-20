@@ -12,7 +12,7 @@ public class Order
     
     public int CustomerId { get; set; }
     
-    [Range(0, double.MaxValue)]
+    [Range(0, int.MaxValue)]
     public decimal TotalAmount { get; set; }
     
     [ConcurrencyCheck]
