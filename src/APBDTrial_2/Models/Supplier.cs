@@ -27,4 +27,6 @@ public class Supplier
     
     [ConcurrencyCheck]
     public byte[] RowVersion { get; set; }
+    
+    public ICollection<Product> Products { get; set; }
 }

@@ -7,7 +7,7 @@ public class Order
     [Key]
     public int Id { get; set; }
     
-    [Timestamp]
+    [Required, Timestamp]
     public DateTime OrderDate { get; set; }
     
     public int CustomerId { get; set; }
